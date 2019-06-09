@@ -105,13 +105,21 @@ class VTWA:
         except ValueError as e:
             print(e)
 
-    def getfile(self, name, dirname="./"):
+    def GetFile(self, name, dirname="./"):
         url = VTWA.apiurl + self.__CreateParams()
         try:
             res = BasicReq(self.key, "", url)
             self.__saveEnc(res, name, dirname)
         except ValueError as e:
             print(e)
+
+    def GetRaw(self):
+        url = VTWA.apiurl + self.__CreateParams()
+        try:
+            return BasicReq(self.key, "", url)
+        except ValueError as e:
+            print(e)
+            return ""
 
     def __saveEnc(self, res, name, dirname="./"):
         if dirname[-1:] != "/":
@@ -137,4 +145,4 @@ def BasicReq(user, pas, url):
 if __name__ == "__main__":
     vtwa = VTWA(apikey)
     vtwa.SetVTWA("テスト", fmat="mp3")
-    vtwa.getfile("test")
+    vtwa.GetFile("test")

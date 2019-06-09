@@ -38,4 +38,4 @@ apikeyに[VoiceTextWebAPI](https://cloud.voicetext.jp/webapi)から提供され�
 - volume_level=100
 音量を指定します　小さいほど小さくなります
 
-`getfile()`メソッドはdirnameのキーワード引数で保存先フォルダが指定できます
+`GetFile()`メソッドはdirnameのキーワード引数で保存先フォルダが指定できます
