@@ -3,7 +3,7 @@
 
 ## How about this
 
-ショー君に代表される、HOYA株式会社による音声合成VoiceTextの[WebAPI(https://cloud.voicetext.jp/webapi)]をpythonで使えるようにしたもの
+ショー君に代表される、HOYA株式会社による音声合成VoiceTextの [WebAPI(https://cloud.voicetext.jp/webapi)] をpythonで使えるようにしたもの
 
 もともとDiscordBotで動作し、URLリンクの公開や再生を行っていたものを少し整理して、クラス化して公開
 
@@ -13,7 +13,7 @@ python3で作成してpython3で動作確認等したけど、他で動くかは
 
 ## How to use
 
-apikeyに[VoiceTextWebAPI(https://cloud.voicetext.jp/webapi)]から提供されたAPIキーを入力すると使えます。
+apikeyに [VoiceTextWebAPI(https://cloud.voicetext.jp/webapi)] から提供されたAPIキーを入力すると使えます。
 
 コンストラクタ`VTWA(apikey)`でAPIの準備ができて、
 喋って欲しい文字列を`SetVTWA()`メソッドに代入し、
