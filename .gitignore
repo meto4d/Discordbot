@@ -21,3 +21,13 @@ $RECYCLE.BIN/
 # =========================
 # Operating System Files
 # =========================
+
+# =========================
+# User Files
+# =========================
+
+discordbot.py
+account.json
+testbot.py
+copy.sh
+
